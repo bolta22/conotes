@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>CoNotes</title>
-  <script type="module" crossorigin src="./assets/index-r5Z3NpkE.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DVrcCpOJ.css">
 </head>
 <body>
     <!-- <script type="module" src="main.js"></script> -->
+    <script type="module" src="main.js"></script>
+
     <script>
         window.addEventListener('dblclick', function(e) {
             openPostIt(e.clientX - '45', e.clientY);
         });
     </script>
+
+    <div>
+        <input type="color" name="ColorNote" id="CN" value="#fff87b" onchange="colorNote()">
+    </div>
 
 </body>
 </html>
